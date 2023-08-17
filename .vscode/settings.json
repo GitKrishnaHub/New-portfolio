@@ -1,0 +1,15 @@
+{
+    "cSpell.words": [
+        "Topnav"
+    ],
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "cSpell.showAutocompleteSuggestions": true,
+    "tailwindCSS.emmetCompletions": true,
+    "emmet.preferences": {
+    
+    }
+}

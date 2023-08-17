@@ -1,0 +1,79 @@
+.project {
+  width: 100%;
+  font-family: "poppins";
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+.project-info {
+  padding: 4rem;
+}
+.project-data {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 50px #fff;
+}
+.card {
+  overflow: hidden;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.card img {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 96%);
+  height: 12rem;
+  background-size: cover;
+  object-fit: cover;
+}
+.img-data {
+  transition: 1s ease-out;
+  padding: 1rem;
+}
+
+.img-data label {
+  font-size: 20px;
+}
+.img-data label span {
+  color: #ee0672;
+  font-weight: 600;
+}
+.link {
+  display: flex;
+  gap: 1rem;
+}
+.live,.youtube {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s ease-out;
+}
+.live:hover {
+  color: #ee0672;
+  background: #fff;
+  box-shadow: 0 0 20px #ee0672;
+  transform: scale(1);
+  transition: 0.5s ease-in;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) and (orientation: portrait) {
+  .project {
+    padding: 0;
+  }
+  .project-info {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
+  .project {
+    padding: 0;
+  }
+  .project-info {
+    padding: 0;
+  }
+}

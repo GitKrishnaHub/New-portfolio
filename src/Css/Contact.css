@@ -1,0 +1,159 @@
+.contact {
+  width: 100%;
+}
+.contact-data {
+  padding: 2rem;
+}
+.contact-info {
+  position: relative;
+  padding: 1rem;
+  box-shadow: 0 0 40px #fff;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4rem 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.personal-data {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  gap: 3rem;
+  
+}
+.personal-data h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.img-contact {
+  width: 400px;
+  object-fit: cover;
+  position: relative;
+  transform: translate(30%, 0%);
+}
+.contact-info::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 5%;
+  right: 50%;
+  transform: translateY(50%);
+  background: linear-gradient(-45deg, #4481eb, #04befe);
+}
+.contact-detail {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 2rem;
+}
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  height: 55px;
+  background-color: #333;
+  margin: 10px 0;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  align-items: center;
+}
+.input-field .icon {
+  color: #fff;
+  text-align: center;
+  line-height: 55px;
+  font-size: 2rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.text-area {
+  background-color: #333;
+  max-width: 380px;
+  width: 100%;
+}
+.text-area textarea {
+  width: 100%;
+  height: 100px;
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.contact-detail .btn1 {
+  width: 100%;
+  max-width: 380px;
+}
+
+@media screen and (min-width:300px) and (max-width:800px) and (orientation:portrait){
+  
+  .contact-data{
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .contact-info{
+    
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+  }
+  .personal-data{
+   position: absolute;
+    visibility: hidden;
+  }
+  .personal-data h1{
+    font-size: 2rem;
+    position: relative;
+    
+  }
+  .personal-data .social{
+    position: relative;
+    top: 3rem;
+  }
+  .img-contact{
+    visibility: hidden;
+  }
+  .contact-detail{
+    padding: 0 0 3rem 0;
+   display:flex;
+   position: relative;
+   gap: 2rem;
+  }
+}
+@media screen and (min-width:500px) and (max-width:1280px) and (orientation:landscape){
+  
+  .contact-info{
+    display: flex;
+    margin: 0;
+  }
+  .personal-data h1{
+    font-size: 2.5rem;
+    position: relative;
+    
+  }
+}

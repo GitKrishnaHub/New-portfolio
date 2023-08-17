@@ -1,0 +1,155 @@
+.about {
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.heading p {
+  font-family: "Nosifer";
+  font-size: 2.5rem;
+}
+.heading span {
+  color: #ee0672;
+}
+.heading h4 {
+  font-family: "poppins";
+}
+.about-data {
+  position: relative;
+  box-shadow: 0 0 50px #fff;
+  background: rgb(16, 15, 15);
+  opacity: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 84vh;
+  margin: 0 2rem 0 5rem;
+   
+}
+.image {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+.image img:hover {
+  transform: scale(1.2);
+  transition: 1s ease-out;
+  
+}
+.image img {
+  transition: 1s ease-in;
+  object-fit:cover;
+  height: 100%;
+  width: 100%;
+   
+}
+.text {
+  color: #fff;
+  display: block;
+
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  padding: 20px;
+}
+.text h2 {
+  margin-bottom: 10px;
+  font-family: "poppins";
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.text label {
+  color: #ee0672;
+}
+.text p {
+  font-family: "poppins";
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.text span {
+  font-family: "poppins";
+  font-size: 1.2rem;
+  color: #ee0672;
+}
+.social-acc {
+  width: fit-content;
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) and (orientation: portrait) {
+  .about {
+    margin: 0 0 5rem 0;
+    padding: 0;
+  }
+  .heading p,
+  .heading span {
+    font-size: 1.5rem;
+  }
+  .heading h4{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about-data {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .image img{
+    width: 100%;
+    height: 400px;
+  }
+  .text {
+    padding: 1rem;
+  }
+  .text h2,
+  .text label {
+    font-size: 1.5rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
+  .about {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+  .about-data {
+    margin: 0;
+  }
+  .heading p,
+  .heading span {
+    font-size: 2rem;
+  }
+ 
+  .text {
+    padding: 1rem;
+  }
+  .text h2,
+  .text label {
+    font-size: 1.5rem;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}

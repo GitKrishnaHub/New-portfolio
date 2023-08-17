@@ -1,0 +1,276 @@
+.Home {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 5rem;
+  padding: 4rem;
+}
+.home-content {
+  width: 100%;
+  opacity: 100%;
+  cursor: pointer;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  margin: 0 4rem 0 4rem;
+  gap: 2rem;
+  padding: 4rem;
+}
+.profile {
+  height: 50%;
+  width: 40%;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+.profile::before,.profile::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background:linear-gradient(45deg, #ee0672,#005,green,red,yellow,aqua, #ee0672, #005,gray);
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: 1;
+  border-radius: 50%;
+  animation: animation 20s linear infinite;
+}
+@keyframes animation {
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 40% 0;
+  }
+}
+.profile::after{
+  filter: blur(20px);
+  
+}
+.profile img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 1s ease-out;
+  background-color: rgb(16, 15, 15);
+}
+ 
+.text-data {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+}
+
+.text-data span {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.text-data h4 {
+  font-size: 2.5rem;
+}
+.skill {
+  font-size: 2.1rem;
+  font-family: "Nosifer";
+  color: #ee0672;
+}
+
+.text-data h1 {
+  font-size: 3rem;
+  font-family: "Nosifer";
+}
+.text-data .name {
+  font-size: 3rem;
+  color: #ee0672;
+}
+.text-data p {
+  font-size: 1.2rem;
+  font-family: "poppins";
+}
+.btn-tab {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+}
+.btn1 {
+  padding: 10px;
+  background: #ee0672;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #ee0672;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+
+  color: #fff;
+  font-family: "poppins";
+}
+.btn1:hover {
+  color: #ee0672;
+  box-shadow: 0 0 1rem #fff;
+  background: #fff;
+  transition: 0.5s ease;
+}
+.btn2 {
+  padding: 10px;
+  background: #fff;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #fff;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+
+  color: #ee0672;
+  font-family: "poppins";
+}
+.btn2:hover {
+  color: #fff;
+  box-shadow: 0 0 1rem #ee0672;
+  background: #ee0672;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .Home {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0 3rem 0;
+  }
+  .home-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    place-items: center;
+    margin: 0;
+    padding: 2rem 0 3rem 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+  }
+  .profile {
+    height: 14rem;
+    width: 14rem;
+  }
+  .text-data {
+    position: relative;
+    left: 0;
+    gap: 10px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .text-data h4 {
+    font-size: 1.5rem;
+  }
+  .text-data span {
+    font-size: 1rem;
+  }
+  .text-data h1,
+  .text-data .name {
+    font-size: 2rem;
+  }
+  .text-data p {
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) and (orientation: portrait) {
+  .home-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    place-items: center;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+  }
+  .profile {
+    height: 14rem;
+    width: 14rem;
+  }
+  .text-data {
+    position: absolute;
+    left: 0;
+    right: 0;
+    gap: 10px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .text-data h4 {
+    font-size: 2rem;
+  }
+  .text-data p {
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+  }
+  .text-data span {
+    font-size: 1rem;
+  }
+  .text-data h1,
+  .text-data .name {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .Home {
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+  }
+  .home-content {
+    margin: 0;
+    padding: 0 0 0 4rem;
+  }
+  .text-data {
+    gap: 1rem;
+  }
+  .text-data span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .Home {
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+  }
+  .home-content {
+    margin: 0;
+    padding: 0 0 0 2rem;
+  }
+  .profile {
+    top: 0;
+  }
+  .text-data {
+    gap: 0.2rem;
+  }
+  .text-data h4 {
+    font-size: 1.5rem;
+  }
+  .text-data span {
+    font-size: 1rem;
+  }
+  .text-data h1,
+  .text-data .name {
+    font-size: 1.5rem;
+  }
+}
